@@ -1,6 +1,8 @@
-class TeachersController < ApplicationController
+class StudentsController < ApplicationController
   def new
-    @placeholder_course = '186'
+    @placeholder_full_name = 'Tim Cheng'
+    @placeholder_course = 'CS70'
+    @placeholder_grade_level = 'Sophomore'
   end
 
   def create
@@ -10,4 +12,5 @@ class TeachersController < ApplicationController
     @grade_level = params[:grade_level]
     render 'show'
   end
+
 end
